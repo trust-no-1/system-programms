@@ -1,0 +1,11 @@
+ int s, d, e, f,w;
+            s = Convert.ToInt32(Console.ReadLine());
+
+            d =s/100;
+            w =s%100;
+            e = w / 10;
+            f = s%10;
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+            Console.WriteLine(f);
+            Console.ReadKey();
