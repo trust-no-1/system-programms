@@ -1,0 +1,8 @@
+ double r, a,b ;
+            Console.WriteLine("Введите r");
+            r = double.Parse(Console.ReadLine());
+            a = Math.PI * r * 2;
+            b = Math.PI * r;
+            Console.WriteLine("Длинв окружности= " + a);
+            Console.WriteLine("Площадь окружности= " + b);
+            Console.ReadKey();
