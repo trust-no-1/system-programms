@@ -1,0 +1,9 @@
+ double a, b, x, y;
+            Console.WriteLine("Введите a и b");
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            x = (2 + a * b) / (Math.Pow(a, 2) - Math.Pow(b, 2));
+            y = a / 3 + 7 * Math.Pow(b, 3);
+            Console.WriteLine("X= " + x);
+            Console.WriteLine("Y= " + y);
+            Console.ReadKey();
