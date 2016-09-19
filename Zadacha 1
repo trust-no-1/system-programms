@@ -1,0 +1,9 @@
+ double a, b, c, p, s;
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Math.Pow(b, 2) + Math.Pow(a, 2);
+            p = a + b + c;
+            s = ( a * b)/2;
+            Console.WriteLine("Периметр="+p);
+            Console.WriteLine("Площадь="+s);
+            Console.ReadKey();
