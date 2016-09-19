@@ -1,0 +1,17 @@
+ double x1, x2, y1, y2, a1, a2, z, d, f, P, p, s;
+            Console.WriteLine("Введите x1, x2 и y1, y2, a1 ,a2 ");
+            x1= double.Parse(Console.ReadLine());
+            x2= double.Parse(Console.ReadLine());
+            y1= double.Parse(Console.ReadLine());
+            y2= double.Parse(Console.ReadLine());
+            a1= double.Parse(Console.ReadLine());
+            a2= double.Parse(Console.ReadLine());
+            z = Math.Sqrt(Math.Pow(y1 - x1, 2) + Math.Pow(y2 - x2, 2));
+            d = Math.Sqrt(Math.Pow(a1 - y1, 2) + Math.Pow(a2 - y2, 2));
+            f = Math.Sqrt(Math.Pow(x1 - a1, 2) + Math.Pow(x2 - a2, 2));
+            P = z + d + f;
+            p = P / 2;
+            s = Math.Sqrt(p * (p - z) * (p - f) * (p - f));
+            Console.WriteLine("Периметр = "+P);
+            Console.WriteLine("Площадь = " +s);
+            Console.ReadKey();
