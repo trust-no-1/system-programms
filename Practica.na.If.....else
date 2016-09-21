@@ -1,0 +1,33 @@
+1 задачка 
+ double a, b, c, p, s, f;
+            Console.WriteLine("Введите a,b и c");
+            a = Convert.ToInt32(Double.Parse(Console.ReadLine()));
+            b = Convert.ToInt32(Double.Parse(Console.ReadLine()));
+            c = Convert.ToInt32(Double.Parse(Console.ReadLine()));
+            if (a > 0)
+            {
+                p = Math.Pow(a, 2);
+                Console.WriteLine("a=" + p);
+            }
+            else {
+                p= Math.Pow(a, 4);
+                Console.WriteLine("a=" + p);
+            }
+            if (b > 0) {
+                s = Math.Pow(b, 2);
+                Console.WriteLine("b=" + s);
+            }
+            else {
+                s= Math.Pow(b, 4);
+                Console.WriteLine("b=" + s);
+            }
+            if (c > 0)
+            {
+                f= Math.Pow(c, 2);
+                Console.WriteLine("c=" + f);
+            }
+            else {
+                f = Math.Pow(b, 4);
+                Console.WriteLine("c=" + f);
+            }
+            Console.ReadLine();
