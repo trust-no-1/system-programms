@@ -1,0 +1,24 @@
+1) Probeshka 
+           int dney = 0;
+           double km=10;
+           double d=10;
+          double f;
+            for (double i=0; dney!=8; i++)
+            {
+                dney++;
+               f = d / 100 * 10;
+                km += f;
+
+
+
+2) Delenie kletok 
+            int cletki = 0;
+            int i = 0;
+            do
+            {
+                cletki += 2;
+                i += 3;
+            }
+            while (i<24);
+            Console.WriteLine(+cletki);
+            Console.ReadKey();
