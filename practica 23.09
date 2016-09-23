@@ -1,0 +1,11 @@
+4 задача
+
+ int k = 16, g;
+            Console.WriteLine("Всего 64 лапы: ");
+            for (g = 0; g < 33; g += 2)
+            {
+                Console.WriteLine("Kроликов- "+k +" Гусей- "+g);
+                
+                k -= 1;
+            }
+            Console.ReadKey();
