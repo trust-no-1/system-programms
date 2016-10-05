@@ -1,0 +1,58 @@
+ class Program
+    {
+        public static void Main(string[] args)
+        {
+            double a, b, c;
+            Console.WriteLine("Введите a, b, c");
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine());
+            Console.WriteLine("Дискриминант = " + diskriminant(a, b, c));
+             X(a, b, c);
+        }
+        public static double diskriminant(double a, double b, double c)
+        {
+            double d;
+            d = Math.Pow(b, 2) - 4 * a * c;
+            return d;
+        }
+        public static double X (double a, double b, double c)
+        {
+            double X1, X2;
+
+            if (a == 0)
+            {
+                if (b == 0)
+                {
+                    if (c == 0)
+                    {
+                        Console.WriteLine("Любое x");
+                    }
+                    else Console.WriteLine("нет решения");
+                }
+                else
+                {
+                    X1 = -c / b;
+                    Console.WriteLine("X1= "+X1);
+                }
+            }
+            else
+            {
+
+                if (diskriminant(a, b, c) < 0)
+                {
+                    Console.WriteLine("нет корней");
+                }
+                else
+                {
+                    X1 = (-b + Math.Sqrt((diskriminant(a, b, c))) / (2 * a));
+                    X2 = (-b - Math.Sqrt((diskriminant(a, b, c))) / (2 * a));
+                    Console.WriteLine("X1"+X1);
+                    Console.WriteLine("X2"+X2);
+                   
+
+                }
+            }
+        }
+    }
+
