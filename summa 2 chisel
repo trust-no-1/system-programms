@@ -1,0 +1,22 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b;
+            Console.WriteLine("Введите 2 числа");
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            summ(a, b);
+            vivod(a, b);
+        }
+        static double summ(double a, double b)
+        {
+          
+            return a + b;
+            
+        }
+        static void vivod(double a, double b)
+        {
+           Console.WriteLine(summ(a,b));
+        }
+    }
